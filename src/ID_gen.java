@@ -1,7 +1,9 @@
+import java.util.Random;
+
 public class ID_gen {
     public static int genID(){
         Integer ch = 0;
-        ch = (int) (Math.random()*1000000);
+        int[] arr=new Random().ints(1,99).distinct().limit(10).toArray();
         return ch;
     }
 }
